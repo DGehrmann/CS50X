@@ -1,0 +1,42 @@
+sort1 uses: Bubble sort
+
+    - reversed10000: time = 0.345s
+    - reversed50000: time = 16.859s
+    - sorted10000: time = 0.062s
+    - sorted50000: time = 7.433s
+    - random10000: time = 0.314s
+    - random50000: time = 20.003s
+
+How do you know?: - big difference between sorted and reversed
+                  - bubble sort only runs the sorted list once completely, realizes that it did not have to swap any numbers an thus terminates
+                  - selection sort and merge sort, in contrast, do not have such a "termination statement" and thus would take approximately the same amount of time for both the reversed and the sorted list (and the random one as well)
+
+
+
+sort2 uses: Merge sort
+
+    - reversed10000: time = 0.090s
+    - reversed50000: time = 9.730
+    - sorted10000: time = 0.089s
+    - sorted50000: time = 7.080s
+    - random10000: time = 0.078s
+    - random50000: time = 8.964s
+
+How do you know?: - fastest in general
+                  - roughly the same amount of time for all three lists
+
+
+
+sort3 uses: Selection sort
+
+    - reversed10000: time = 0.196s
+    - reversed50000: time = 12.245s
+    - sorted10000: time = 0.172s
+    - sorted50000: time = 12.867s
+    - random10000: time = 0.176s
+    - random50000: time = 13.091s
+
+How do you know?:   - roughly the same amount of time for all three lists
+                    - slower than sort2
+
+
