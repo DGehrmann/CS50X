@@ -1,4 +1,4 @@
-This reporsitory contains my implementations of the Problem Sets of Harvards "Introduction to Computer Science (CS50X)" Onlince Course (2022 version). 
+This reporsitory contains my implementations of the Problem Sets of Harvards "Introduction to Computer Science (CS50X)" Online Course (2022 version). 
 Link to the course: https://cs50.harvard.edu/x/2023/
 
 
