@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let query = document.getElementById("page_search");
+            query.addEventListener("keypress", (event)=> {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+
+                if (query.value === "Start") {
+                    window.location.href = "index.html";
+                }
+                else if (query.value === "Hobbies") {
+                    window.location.href = "hobbies.html";
+                }
+                else if (query.value === "CV") {
+                    window.location.href = "cv.html";
+                }
+                else if (query.value === "Links") {
+                    window.location.href = "links.html";
+                }
+            }
+            });
+        });
+    </script>
+    <body>
+        <h5>
+            <a class="one" href="index.html">Start</a>
+            <a class="one" href="/hobbies.html">Hobbies</a>
+            <a class="one" href="cv.html">CV</a>
+            <a class="one" href="links.html">Links</a>
+            <div class="right">
+                <input type="search" placeholder="go to page" list="pages" id="page_search"></input>
+            </div>
+        </h5>
+
+        <datalist id="pages">
+            <option value="Start">
+            <option value="Hobbies">
+            <option value="CV">
+            <option value="Links">
+        </datalist>
+
+        <h1>This is my curriculum.</h1>
+
+        <p>From 2004 to 2013 I went to a public High-School in my hometown. In class 11 I spent one semester abroad at John-Abbott-College in Montreal, Canada. After finishing High-School in March 2013 I decided to do a voluntary service in Indonesia for half a year.
+            After that, I continued traveling south-east asia for three more month. I inscribed to Technische Universität Braunschweig for the fall semester 2014 and startet studying Environmental Engineering. In 2017, succeeding one semester on the island of La Réunion,
+            I finished my bachelors. I immediately continued my masters in the same subject, focussing on Hydrology, River Engineering and Coastal Engineering. I graduated in November 2020 and started my first job at the Bavarian Environmental Agency in Augsburg, where I
+            worked for one and a half years. I then decided to change jobs and am now looking forward to start working in an engineering consultancy from October 2022 onwards.
+        </p>
+    </body>
+</html>

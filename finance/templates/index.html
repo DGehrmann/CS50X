@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Overview
+{% endblock %}
+
+{% block main %}
+<table>
+    <tr>
+        <!--<th>Company</th>-->
+        <th>Symbol</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th>Total Value</th>
+    </tr>
+    {% for j in range(0, length)%}
+        <tr>
+            <td>{{stocks[j]}}</td>
+            <td>{{shares[j]}}</td>
+            <td>{{prices[j]}}</td>
+            <td>{{values[j]}}</td>
+        </tr>
+    {% endfor %}
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Cash: {{cash}}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Total: {{total}}</td>
+    </tr>
+</table>
+{% endblock %}

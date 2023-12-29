@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width"> <!-- adapts size to device -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let query = document.getElementById("page_search");
+                query.addEventListener("keypress", (event)=> {
+                    if (event.keyCode === 13) {
+                        event.preventDefault();
+
+                    if (query.value === "Start") {
+                        window.location.href = "index.html";
+                    }
+                    else if (query.value === "Hobbies") {
+                        window.location.href = "hobbies.html";
+                    }
+                    else if (query.value === "CV") {
+                        window.location.href = "cv.html";
+                    }
+                    else if (query.value === "Links") {
+                        window.location.href = "links.html";
+                    }
+                }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h5>
+            <a class="one" href="index.html">Start</a>
+            <a class="one" href="hobbies.html">Hobbies</a>
+            <a class="one" href="cv.html">CV</a>
+            <a class="one" href="links.html">Links</a>
+            <div class="right">
+                <input type="search" placeholder="go to page" list="pages" id="page_search"></input>
+            </div>
+        </h5>
+
+        <datalist id="pages">
+            <option value="Start">
+            <option value="Hobbies">
+            <option value="CV">
+            <option value="Links">
+        </datalist>
+
+        <h1>This is me - overview.</h1>
+
+        <div>
+            <table id="centertable">
+                <tr>
+                    <th>Name</th>
+                    <td>Daniel Gehrmann</td>
+                    <td rowspan="5" width="260"><div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="bert.jpg" class="d-block w-100" alt="Portrait1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="bert1.jpg" class="d-block w-100" alt="Portrait2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="bert2.jpg" class="d-block w-100" alt="Portrait3">
+                          </div>
+                        </div>
+                      </div></td>
+                </tr>
+                <tr>
+                    <th>Adress</th>
+                    <td>Examplestreet 9, 76887 Examplecity, Germany</td>
+                </tr>
+                <tr>
+                    <th>Date of birth</th>
+                    <td>07/10/1990</td>
+                </tr>
+                <tr>
+                    <th>E-mail</td>
+                    <td>example@example.de</th>
+                </tr>
+                <tr>
+                    <th>Telephone</th>
+                    <td>+49-178-910111213</td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>

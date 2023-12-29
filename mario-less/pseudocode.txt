@@ -1,0 +1,9 @@
+Ask user to input height of pyramid
+if height is bigger than one and lower than nine
+    iterate from 1 through height:
+        print height-1 times space followed by #
+        new line
+        print height-2 times space followed by ##
+        new line
+        etc.
+else go back to line one

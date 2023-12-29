@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let query = document.getElementById("page_search");
+            query.addEventListener("keypress", (event)=> {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+
+                if (query.value === "Start") {
+                    window.location.href = "index.html";
+                }
+                else if (query.value === "Hobbies") {
+                    window.location.href = "hobbies.html";
+                }
+                else if (query.value === "CV") {
+                    window.location.href = "cv.html";
+                }
+                else if (query.value === "Links") {
+                    window.location.href = "links.html";
+                }
+            }
+            });
+        });
+    </script>
+    <body>
+        <h5>
+            <a class="one" href="index.html">Start</a>
+            <a class="one" href="/hobbies.html">Hobbies</a>
+            <a class="one" href="cv.html">CV</a>
+            <a class="one" href="links.html">Links</a>
+            <div class="right">
+                <input type="search" placeholder="go to page" list="pages" id="page_search"></input>
+            </div>
+        </h5>
+
+        <datalist id="pages">
+            <option value="Start">
+            <option value="Hobbies">
+            <option value="CV">
+            <option value="Links">
+        </datalist>
+
+        <h1>Here you can find some links connected to my CV.</h1>
+
+        <div class="container">
+            <ol class="myOL">
+                <li><a href="https://www.johnabbott.qc.ca/" target="blank">John-Abbott-College</a></li>
+                <li><a href="https://www.ems-online.org" target="blank">Evangelische Mission in Solidarität</a></li>
+                <li><a href="https://www.tu-braunschweig.de/" target="blank">TU Braunschweig</a></li>
+                <li><a href="https://www.univ-reunion.fr/" target="blank">Université de la Réunion</a></li>
+            </ol>
+        </div>
+    </body>
+</html>

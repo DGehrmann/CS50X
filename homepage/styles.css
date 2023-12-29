@@ -1,0 +1,99 @@
+body {
+    background-color: #dee6ea;
+    color: #323435;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.container {
+    text-align: center;
+    margin-top:5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ol.myOL, ul.myUL {
+    display: inline-block;
+    text-align: left;
+    font-size: 25px;
+  }
+
+#centertable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 48px;
+    padding: 20px;
+}
+
+table {
+    width: 60%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: coral;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+a.one:link, a.one:visited {
+    background-color: coral;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.one:hover, a.one:active {
+    background-color: #f44336;
+}
+
+h5 {
+    background-color: grey;
+    padding: 5px;
+}
+
+p {
+    padding: 5px;
+    font-size: 25px;
+}
+
+.right {
+    float: right;
+}
+
+.carousel-item {
+    transition: transform 2s;
+}
